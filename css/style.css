@@ -7,6 +7,7 @@ body {
 .container {
 	margin: auto;
 	max-width: 1140px;
+	padding: 0 15px;
 }
 
 .venom {
@@ -112,4 +113,89 @@ body {
 
 .button-link {
 	color: #ffffff;
+}
+
+/**/
+
+.content {
+	display: flex;
+	gap: 165px;
+}
+
+.col {
+	flex-basis: 50%;
+}
+
+.col-poster {
+	display: flex;
+	gap: 30px;
+}
+
+.poster {
+	border-radius: 5px;
+}
+
+.content-title {
+	margin: 0 0 20px 0;
+	font-size: 36px;
+	line-height: 42px;
+	color: rgba(255, 255, 255, 0.8);
+}
+
+.content-text {
+	margin-bottom: 30px;
+	font-size: 16px;
+	line-height: 140%;
+	max-width: 440px;
+}
+
+.content-subtitle,
+.list {
+	margin-top: 0;
+	margin-bottom: 15px;
+	font-size: 16px;
+	line-height: 140%;
+	color: rgba(255, 255, 255, 0.8);
+}
+
+.creators .content-subtitle {
+	margin-bottom: 5px;
+}
+
+.list {
+	column-count: 2;
+	column-gap: 20px;
+	list-style: none;
+	padding: 0;
+	max-width: 350px;
+}
+
+.creators .list {
+	margin-bottom: 20px;
+}
+
+.list-item {
+	line-height: 1.5;
+}
+
+.trailer {
+	margin-top: 33px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 356px;
+	height: 205px;
+	background: url("../img/trailer-cover.jpg") no-repeat center / contain;
+	border-radius: 5px;
+}
+
+.play {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 45px;
+	height: 45px;
+	border-radius: 50%;
+	border: none;
+	cursor: pointer;
 }
