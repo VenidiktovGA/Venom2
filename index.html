@@ -7,23 +7,38 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<link rel="preconnect" href="https://fonts.gstatic.com" />
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
 	<link rel="stylesheet" href="css/normalize.css" />
 	<link rel="stylesheet" href="css/style.css" />
+	<script src="js/main.js" defer></script>
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" defer></script>
+	<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" defer></script>
 	<title>Venom 2</title>
 </head>
 
 <body>
 	<div class="container">
 		<header class="header">
-			<a href="/" class="logo-link">
+			<a href="index.html" class="logo-link">
 				<img width="46" height="71" src="img/logo.png" alt="Logo venom" class="logo-img" />
 			</a>
 			<nav class="nav">
+				<button class="menu-button">
+					<span class="menu-button-text">меню</span>
+					<img src="img/menu.svg" alt="Burger-menu" class="menu-button-icon">
+				</button>
+
+				<button class="menu-close">
+					<span class="menu-close-text">закрыть</span>
+					<img src="img/arrow.svg" alt="Arrow right" class="menu-close-icon">
+				</button>
+
 				<ul class="nav-menu">
 					<li class="nav-menu-item"><a href="about.html" class="nav-menu-link">о фильме</a></li>
-					<li class="nav-menu-item"><a href="trailer.html" class="nav-menu-link">трейлер</a></li>
-					<li class="nav-menu-item"><a href="actors.html" class="nav-menu-link">актеры</a></li>
-					<li class="nav-menu-item"><a href="premier.html" class="nav-menu-link">премьера</a></li>
+					<li class="nav-menu-item"><a data-fancybox href="https://www.youtube.com/watch?v=Othd8W8o3t0"
+							class="nav-menu-link">трейлер</a></li>
+					<li class="nav-menu-item"><a href="#" class="nav-menu-link">актеры</a></li>
+					<li class="nav-menu-item"><a href="#" class="nav-menu-link">премьера</a></li>
 				</ul>
 			</nav>
 		</header>
@@ -37,10 +52,10 @@
 			</div>
 			<!-- /.film-text -->
 			<div class="button-group">
-				<button class="button button-primary">
+				<a data-fancybox href="https://www.youtube.com/watch?v=Othd8W8o3t0" class="button button-primary">
 					<img wght="15" height="15" src="img/play.svg" alt="Play" class="button-icon">
 					<span class="button-text">смотреть трейлер</span>
-				</button>
+				</a>
 				<a href="trailer.html" class="button button-link">
 					<img wght="15" height="15" src="img/ticket.svg" alt="Ticket" class="button-icon">
 					<span class="button-text">билеты на премьеру</span>
